@@ -1,0 +1,29 @@
+form{
+    position: relative;
+    margin: 10% auto;
+    width:40%;
+}
+form button{
+    position: relative;
+    margin: 1% auto;
+}
+#heading
+{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top:15%;
+}
+
+element.style {
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.submit-btn {
+    
+    width: 24%;
+    
+    margin: 4% 38%;
+    
+}

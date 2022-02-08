@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Node static docs</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Vivek's Tutorials</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">Update Details</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="/services">Services</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1 id="heading">Upload Student details</h1>
+      <form action="/register" method="post" class="form">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingName" name="floatingName" placeholder="xyz..">
+            <label for="floatingName">Full Name</label>
+          </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" name="floatingEmail" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingRollno" name="floatingRollno"placeholder="76..">
+            <label for="floatingPassword">Roll number</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingDepartment" name="floatingDepartment" placeholder="IT.">
+            <label for="floatingCPassword">Department</label>
+          </div>
+          <button type="submit" class="btn btn-outline-primary submit-btn">submit details</button>
+
+  
+      </form>
+
+
+</body>
+</html>
