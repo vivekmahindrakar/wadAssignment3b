@@ -70,13 +70,44 @@ app.post('/register',function(req,res){
         }
         else
         {
-            res.render("index.ejs",{status:'display:block;'})
+            res.render("index.ejs",{status:'display:block;'});
             console.log(result);
         }
     })
 
 
 
+})
+app.post('/delete' ,(req,res)=>
+{
+    // var result = confirm("Do you want to delete?");
+
+    // if(result)
+    {
+        const rollno = req.body.roll;
+
+        Student.findOneAndDelete({rollNo:rollno},(err,docs)=>
+        {
+            if(err)
+            {
+                console.log(err);
+            }
+            else
+            {
+                Student.find({},function(err,foundStudents)
+                {
+                    if(!err)
+                    res.render("./Students.ejs",{Students:foundStudents});
+            
+                    else
+                    res.send(err);
+                })
+            }
+        })
+    }
+    
+
+    
 })
 
 

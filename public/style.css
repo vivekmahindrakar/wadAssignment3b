@@ -27,3 +27,41 @@ element.style {
     margin: 4% 38%;
     
 }
+
+.main-table
+{
+    position: relative;
+    top:20%;
+    margin: 10% auto;
+    width: 80%;
+
+}
+.main-table th
+{
+    background-color: rgb(31, 219, 157);
+    
+}
+
+.main-table tr
+{
+    text-align: center;
+}
+
+.last-td{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.last-td div{
+    text-align: end;
+    width:30%;
+}
+caption{
+    display: table-caption;
+    text-align: center;
+}
+.main-table tr:nth-child(odd)
+{
+    background-color:rgb(171, 231, 211) ;
+   
+}
